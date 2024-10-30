@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
 import "./globals.css";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer";
 
 const geistSans = localFont({
   src: "./assets/fonts/GeistVF.woff",
@@ -11,6 +14,24 @@ const geistMono = localFont({
   src: "./assets/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+const montserrat = localFont({
+  src: [
+    {
+      path: "./assets/fonts/Montserrat-ExtraBold.ttf",
+      weight: "800",
+    },
+  ],
+  variable: "--font-montserrat",
+});
+const manrope = localFont({
+  src: [
+    {
+      path: "./assets/fonts/Manrope-SemiBold.ttf",
+      weight: "600",
+    },
+  ],
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +47,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${manrope.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
