@@ -13,6 +13,10 @@ const config: Config = {
         // foreground: "var(--foreground)",
         main_color: "#FF2E2E"
       },
+      screens: {
+        mobile: "512px",
+        tablet: "960px"
+      }
     },
   },
   plugins: [],

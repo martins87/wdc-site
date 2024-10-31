@@ -12,16 +12,18 @@ const links: Link[] = [
 
 const NavLinks = () => {
   return (
-    <ul className="flex gap-12">
-      {links.map((link: Link) => (
-        <li
-          className="text-white font-[family-name:var(--font-manrope)]"
-          key={link.src}
-        >
-          {link.label}
-        </li>
-      ))}
-    </ul>
+    <div className="hidden lg:flex">
+      <ul className="flex gap-12">
+        {links.map((link: Link) => (
+          <li
+            className="text-white font-[family-name:var(--font-manrope)] font-semibold text-base"
+            key={link.src}
+          >
+            {link.label}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

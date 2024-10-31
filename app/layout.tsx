@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer";
 
 const geistSans = localFont({
   src: "./assets/fonts/GeistVF.woff",
@@ -26,6 +25,14 @@ const montserrat = localFont({
 });
 const manrope = localFont({
   src: [
+    {
+      path: "./assets/fonts/Manrope-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "./assets/fonts/Manrope-Medium.ttf",
+      weight: "500",
+    },
     {
       path: "./assets/fonts/Manrope-SemiBold.ttf",
       weight: "600",
@@ -51,7 +58,6 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

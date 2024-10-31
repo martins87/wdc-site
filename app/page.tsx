@@ -1,3 +1,10 @@
+import Container from "./components/Container";
+import Hero from "./components/Hero/Hero";
+
 export default function Home() {
-  return <div className="text-white">Hello there</div>;
+  return (
+    <Container>
+      <Hero />
+    </Container>
+  );
 }
