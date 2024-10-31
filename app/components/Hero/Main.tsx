@@ -1,8 +1,8 @@
 import Button from "../Button";
 
-const Hero = () => {
+const Main = () => {
   return (
-    <div className="w-[48%] flex flex-col gap-y-6 text-white mt-96 mr-auto">
+    <div className="flex flex-col gap-y-6 text-white">
       <div className="font-[family-name:var(--font-montserrat)] uppercase text-[65px] leading-[64px]">
         turning your ideas into cosmic masterpieces
       </div>
@@ -15,4 +15,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Main;
