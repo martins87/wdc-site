@@ -1,6 +1,8 @@
 import Image from "next/image";
-import Cinesercla from "../../assets/icons/Cinesercla.svg";
-import MarraFit from "../../assets/icons/MarraFit.svg";
+// import Cinesercla from "../../assets/icons/Cinesercla.svg";
+// import MarraFit from "../../assets/icons/MarraFit.svg";
+import Cinesercla from "../../assets/icons/Cinesercla.png";
+import MarraFit from "../../assets/icons/MarraFit.png";
 
 const Clients = () => {
   return (
