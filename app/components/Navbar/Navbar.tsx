@@ -9,7 +9,7 @@ import Hamburger from "../../assets/icons/Hamburger.svg";
 const Navbar = () => {
   return (
     <Container>
-      <div className="w-full h-[100px] flex items-center justify-between gap-10 lg:gap-2">
+      <div className="w-full h-[100px] flex items-center justify-between gap-4 sm:gap-10 lg:gap-2">
         <Logo />
         <NavLinks />
         <Button label="START PROJECT" outlined />
