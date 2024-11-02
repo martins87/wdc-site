@@ -3,7 +3,7 @@ import Image from "next/image";
 import Button from "../Button";
 import Container from "../Container";
 import Logo from "./Logo";
-import NavLinks from "./NavLinks";
+import SectionsLinks from "../SectionsLinks";
 import Hamburger from "../../assets/icons/Hamburger.svg";
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     <Container>
       <div className="w-full h-[100px] flex items-center justify-between gap-4 sm:gap-10 lg:gap-2">
         <Logo />
-        <NavLinks />
+        <SectionsLinks navbar />
         <Button label="START PROJECT" outlined />
         <Image className="lg:hidden" src={Hamburger} alt="Hamburger icon" />
       </div>
