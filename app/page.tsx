@@ -1,6 +1,6 @@
 import Container from "./components/Container";
 import Hero from "./components/Hero";
-import SectionTitle from "./components/SectionTitle";
+// import SectionTitle from "./components/SectionTitle";
 import Footer from "./components/Footer";
 
 export default function Home() {
