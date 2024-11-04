@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 import ArrowUp from "../../assets/icons/ArrowUp.svg";
 import { twMerge } from "tailwind-merge";
@@ -7,7 +8,7 @@ import { twMerge } from "tailwind-merge";
 type ProjectCardProps = {
   title: string;
   description: string;
-  image: any;
+  image: string | StaticImport;
   orientation: "left" | "right";
 };
 
