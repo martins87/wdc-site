@@ -12,7 +12,8 @@ const config: Config = {
         background: "#101010",
         // foreground: "var(--foreground)",
         main_color: "#FF2E2E",
-        custom_gray: "#A8A9AB"
+        custom_gray: "#A8A9AB",
+        card_background: "#2E2E2E"
       },
       screens: {
         mobile: "512px",
