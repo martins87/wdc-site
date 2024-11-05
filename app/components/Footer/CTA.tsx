@@ -3,7 +3,7 @@ import Button from "../Button";
 const CTA = () => {
   return (
     <div className="w-full flex flex-col gap-y-1 rounded-3xl bg-background font-[family-name:var(--font-manrope)] text-white">
-      <div className="h-40 flex flex-col gap-y-2 items-center justify-center rounded-3xl sm:rounded-tl-3xl sm:rounded-r-3xl sm:rounded-bl-none bg-card_background -mb-1">
+      <div className="h-36 sm:h-40 flex flex-col gap-y-2 items-center justify-center rounded-3xl sm:rounded-tl-3xl sm:rounded-r-3xl sm:rounded-bl-none bg-card_background -mb-1">
         <span className="text-lg mobile:text-2xl sm:text-3xl tablet:text-4xl xl:text-5xl font-bold">
           Let&apos;s <span className="text-main_color">create</span> something
           truly <span className="text-main_color">cosmic!</span>
