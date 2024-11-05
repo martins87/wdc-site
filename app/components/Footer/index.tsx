@@ -4,12 +4,12 @@ import Links from "./Links";
 
 const Footer = () => {
   return (
-    <Container>
-      <footer className="w-full flex flex-col gap-y-10 mt-40">
+    <footer className="w-full flex flex-col gap-y-10 mt-40">
+      <Container>
         <CTA />
         <Links />
-      </footer>
-    </Container>
+      </Container>
+    </footer>
   );
 };
 

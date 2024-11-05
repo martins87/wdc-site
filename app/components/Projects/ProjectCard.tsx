@@ -1,14 +1,16 @@
 import { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { twMerge } from "tailwind-merge";
 
 import ArrowUp from "../../assets/icons/ArrowUp.svg";
-import { twMerge } from "tailwind-merge";
 
 type ProjectCardProps = {
   title: string;
   description: string;
   image: string | StaticImport;
+  src: string;
   orientation: "left" | "right";
 };
 
@@ -16,6 +18,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   title,
   description,
   image,
+  src,
   orientation,
 }) => {
   return (
@@ -36,7 +39,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
       </div>
       <div className="relative w-full tablet:w-1/2 h-1/2 tablet:h-full flex flex-col items-start justify-center gap-2 p-10 font-[family-name:var(--font-manrope)] text-white">
         <div className="absolute top-8 tablet:top-10 right-8 tablet:right-10 w-4 sm:w-6 tablet:w-8">
-          <Image src={ArrowUp} alt="Arrow up" />
+          <Link href={src}>
+            <Image src={ArrowUp} alt="Arrow up" />
+          </Link>
         </div>
         <span className="text-2xl sm:text-3xl tablet:text-4xl font-extrabold">
           {title}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -29,7 +30,7 @@ const SectionsLinks: FC<SectionsLinksProps> = ({ navbar }) => {
             )}
             key={link.src}
           >
-            {link.label}
+            <Link href={link.src}>{link.label}</Link>
           </li>
         ))}
       </ul>

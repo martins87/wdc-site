@@ -1,7 +1,7 @@
 import SectionTitle from "../SectionTitle";
 import ProjectCard from "./ProjectCard";
-import CineserclaProject from "../../assets/images/cinesercla-project.svg";
-import MarrafitProject from "../../assets/images/marrafit-project.svg";
+import CineserclaProject from "../../assets/images/Cinesercla/cinesercla-project.svg";
+import MarrafitProject from "../../assets/images/Marrafit/marrafit-project.svg";
 
 const Projects = () => {
   return (
@@ -15,12 +15,14 @@ const Projects = () => {
         title="Cinesercla"
         description="By revamping the cinema website, we streamlined navigation and added intuitive features that addressed both user and business needs, boosting engagement."
         image={CineserclaProject}
+        src="/cinesercla"
         orientation="left"
       />
       <ProjectCard
         title="Marra Fit"
         description="The redesign of the gym website brought a fresh look and optimized features, making it simple for members to explore schedules and manage their workouts."
         image={MarrafitProject}
+        src="/marrafit"
         orientation="right"
       />
     </div>
