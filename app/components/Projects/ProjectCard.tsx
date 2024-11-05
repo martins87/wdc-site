@@ -23,7 +23,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
       <div
         className={twMerge(
           "w-full tablet:w-1/2 h-1/2 tablet:h-full flex items-center justify-center overflow-hidden",
-          orientation === "left" ? "order-first" : "order-last"
+          orientation === "left"
+            ? "order-first"
+            : "order-first tablet:order-last"
         )}
       >
         <Image
