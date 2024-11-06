@@ -1,7 +1,7 @@
 import SectionTitle from "../SectionTitle";
 import ProjectCard from "./ProjectCard";
-import CineserclaProject from "../../assets/images/Cinesercla/cinesercla-project.svg";
-import MarrafitProject from "../../assets/images/Marrafit/marrafit-project.svg";
+import CineserclaProject from "../../assets/images/Cinesercla/Cinesercla-Project.png";
+import MarrafitProject from "../../assets/images/Marrafit/Marrafit-Project.png";
 
 const Projects = () => {
   return (
