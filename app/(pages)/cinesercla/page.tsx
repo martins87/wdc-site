@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 import Container from "@/app/components/Container";
-import Design from "../../assets/images/Cinesercla/Design.svg";
+import Design from "../../assets/images/Cinesercla/Design.png";
 import Logo from "../../assets/images/Cinesercla/Logo-Bordeaux.svg";
-import Cinema from "../../assets/images/Cinesercla/Cinema.svg";
-import Pages from "../../assets/images/Cinesercla/Pages.svg";
+import Cinema from "../../assets/images/Cinesercla/Cinema.png";
+import Pages from "../../assets/images/Cinesercla/Pages.png";
 import ArrowRight from "../../assets/icons/ArrowRight.svg";
 
 const page = () => {
@@ -49,20 +49,18 @@ const page = () => {
           <div className="w-full sm:w-1/2 flex flex-col gap-8 sm:flex-row">
             <div className="w-full sm:w-1/2 flex flex-col">
               <span className="text-custom_gray">Client</span>
-              <span className="text-sm sm:text-base lg:text-lg">
-                Cinesercla
-              </span>
+              <span className="text-sm sm:text-base">Cinesercla</span>
             </div>
             <div className="w-full sm:w-1/2 flex flex-col">
               <span className="text-custom_gray">Services</span>
-              <span className="text-sm sm:text-base lg:text-lg">
+              <span className="text-sm sm:text-base">
                 Website Design & Development
               </span>
             </div>
           </div>
           <div className="w-full sm:w-1/2 flex flex-col">
             <span className="text-custom_gray">Project Info</span>
-            <span className="text-sm sm:text-base lg:text-lg">
+            <span className="text-sm sm:text-base">
               Cinesercla, established in 1980, is one of Brazil&apos;s top
               cinema groups, with nearly 80 theaters across 7 states. Since
               1997, the brand has focused on Shopping Centers, forming strong
@@ -76,7 +74,7 @@ const page = () => {
           <div className="w-full flex gap-2">
             <div className="w-1/2 h-auto flex items-center justify-center border border-card_background rounded-3xl bg-card_background">
               <Image
-                className="w-24 mobile:w-32 sm:w-48"
+                className="w-24 mobile:w-32 sm:w-44 md:w-52"
                 src={Logo}
                 alt="Logo Cinesercla"
               />
