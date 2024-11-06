@@ -5,27 +5,39 @@ import Design from "../../assets/images/Cinesercla/Design.svg";
 import Logo from "../../assets/images/Cinesercla/Logo-Bordeaux.svg";
 import Cinema from "../../assets/images/Cinesercla/Cinema.svg";
 import Pages from "../../assets/images/Cinesercla/Pages.svg";
+import ArrowRight from "../../assets/icons/ArrowRight.svg";
 
 const page = () => {
   return (
     <Container>
       <div className="w-full flex flex-col gap-y-10 font-[family-name:var(--font-manrope)] text-white">
-        <span className="flex gap-1 tablet:gap-2 text-xl tablet:text-2xl">
+        <span className="flex gap-1 tablet:gap-2 text-xl tablet:text-2xl font-bold">
           <span>Our</span>
           <span className="text-main_color">Projects</span>
         </span>
-        <div className="w-full flex  gap-8">
-          <Image
-            className="w-24 mobile:w-32 sm:w-48"
-            src={Logo}
-            alt="Cinesercla logo in gray"
-          />
-          <div className="w-0.5 tablet:w-[3px] h-auto flex bg-main_color" />
-          <span className="">
-            Cinema Experience by Leading Entertainment Group
-          </span>
-          <div className="flex flex-1">Visit Website</div>
+        <div className="w-full flex justify-between gap-8">
+          <div className="flex gap-x-10">
+            <Image
+              className="w-24 mobile:w-32 tablet:w-48"
+              src={Logo}
+              alt="Cinesercla logo in gray"
+            />
+            <div className="hidden w-0.5 tablet:w-[3px] h-auto sm:flex bg-main_color rounded-lg" />
+            <span className="hidden sm:flex items-center">
+              Cinema Experience by Leading Entertainment Group
+            </span>
+          </div>
+
+          <div className="w-1/2 mobile:w-[40%] lg:w-[30%] flex items-center justify-end gap-2">
+            <span className="text-base sm:text-lg tablet:text-xl">
+              Visit Website
+            </span>
+            <Image src={ArrowRight} alt="arrow right icon" />
+          </div>
         </div>
+        <span className="flex items-center sm:hidden -mt-4">
+          Cinema Experience by Leading Entertainment Group
+        </span>
         <div className="bg-card_background rounded-3xl p-4">
           <Image className="w-full" src={Design} alt="Cinesercla design" />
         </div>
@@ -33,19 +45,21 @@ const page = () => {
           <div className="w-full sm:w-1/2 flex flex-col gap-8 sm:flex-row">
             <div className="w-full sm:w-1/2 flex flex-col">
               <span className="text-custom_gray">Client</span>
-              <span className="text-base sm:text-lg">Cinesercla</span>
+              <span className="text-sm sm:text-base lg:text-lg">
+                Cinesercla
+              </span>
             </div>
             <div className="w-full sm:w-1/2 flex flex-col">
               <span className="text-custom_gray">Services</span>
-              <span className="text-base sm:text-lg">
+              <span className="text-sm sm:text-base lg:text-lg">
                 Website Design & Development
               </span>
             </div>
           </div>
           <div className="w-full sm:w-1/2 flex flex-col">
             <span className="text-custom_gray">Project Info</span>
-            <span className="text-base sm:text-lg">
-              Cinesercla, established in 1980, is one of Brazil$apos;s top
+            <span className="text-sm sm:text-base lg:text-lg">
+              Cinesercla, established in 1980, is one of Brazil&apos;s top
               cinema groups, with nearly 80 theaters across 7 states. Since
               1997, the brand has focused on Shopping Centers, forming strong
               partnerships with developers to grow its presence. Combining
