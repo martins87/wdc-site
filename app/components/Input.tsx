@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState } from "react";
+import { ChangeEvent, FC, useState } from "react";
 
 type InputProps = {
   placeholder: string;
@@ -9,7 +9,7 @@ type InputProps = {
 const Input: FC<InputProps> = ({ placeholder }) => {
   const [value, setValue] = useState<string>("");
 
-  const onInput = (e: any) => {
+  const onInput = (e: ChangeEvent<HTMLInputElement>) => {
     const v: string = e.target.value;
     setValue(v);
   };
