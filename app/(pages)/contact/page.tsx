@@ -6,7 +6,7 @@ import Button from "@/app/components/Button";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container className="my-20">
       <SectionTitle
         inWhite="Get In"
         inRed="Touch"

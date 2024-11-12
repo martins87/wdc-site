@@ -15,6 +15,7 @@ const config: Config = {
   			main_color: '#FF2E2E',
   			custom_gray: '#A8A9AB',
   			card_background: '#2E2E2E',
+  			card_background_hover: '#424242',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',

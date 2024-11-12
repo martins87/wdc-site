@@ -22,7 +22,10 @@ const ProjectCard: FC<ProjectCardProps> = ({
   orientation,
 }) => {
   return (
-    <div className="w-full h-[402px] flex flex-col tablet:flex-row rounded-3xl bg-card_background overflow-hidden">
+    <Link
+      className="w-full h-[402px] flex flex-col tablet:flex-row rounded-3xl bg-card_background overflow-hidden hover:cursor-pointer hover:bg-card_background_hover"
+      href={src}
+    >
       <div
         className={twMerge(
           "w-full tablet:w-1/2 h-1/2 tablet:h-full flex items-center justify-center overflow-hidden",
@@ -39,9 +42,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
       </div>
       <div className="relative w-full tablet:w-1/2 h-1/2 tablet:h-full flex flex-col items-start justify-center gap-2 p-10 font-[family-name:var(--font-manrope)] text-white">
         <div className="absolute top-8 tablet:top-10 right-8 tablet:right-10 w-4 sm:w-6 tablet:w-8">
-          <Link href={src}>
-            <Image src={ArrowUp} alt="Arrow up" />
-          </Link>
+          <Image src={ArrowUp} alt="Arrow up" />
         </div>
         <span className="text-2xl sm:text-3xl tablet:text-4xl font-extrabold">
           {title}
@@ -50,7 +51,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
           {description}
         </span>
       </div>
-    </div>
+    </Link>
   );
 };
 
