@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import AccordionData from "@/app/components/AboutUs/AccordionData";
 import SectionTitle from "@/app/components/SectionTitle";
-import OurHistory from "../../assets/images/our-history.png";
+// import OurHistory from "../../assets/images/our-history.png";
 import OurHistory1 from "../../assets/images/our-history-0.avif";
 import OurTechnology from "../../assets/images/our-technology.png";
 import OurProcess from "../../assets/images/our-process.png";
