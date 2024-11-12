@@ -1,16 +1,12 @@
+import AboutUs from "./AboutUs";
 import Container from "@/app/components/Container";
-import SectionTitle from "@/app/components/SectionTitle";
 
-const AboutUs = () => {
+const page = () => {
   return (
     <Container>
-      <SectionTitle
-        inWhite="About"
-        inRed="Us"
-        description="A team of experts dedicated to delivering innovative web design and development solutions that elevate your brand."
-      />
+      <AboutUs />
     </Container>
   );
 };
 
-export default AboutUs;
+export default page;
