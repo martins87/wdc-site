@@ -6,7 +6,18 @@ import {
 } from "@/components/ui/accordion";
 import { FC } from "react";
 
-const accordionData = [
+type AccordionItem = {
+  itemId: string;
+  title: string;
+  description: string;
+};
+
+type AccordionDataProps = {
+  openedItem: number;
+  setOpenedItem: (item: number) => void;
+};
+
+const accordionData: AccordionItem[] = [
   {
     itemId: "item-0",
     title: "Our History",
@@ -33,11 +44,6 @@ const accordionData = [
   },
 ];
 
-type AccordionDataProps = {
-  openedItem: number;
-  setOpenedItem: (item: number) => void;
-};
-
 const AccordionData: FC<AccordionDataProps> = ({
   openedItem,
   setOpenedItem,
@@ -51,28 +57,19 @@ const AccordionData: FC<AccordionDataProps> = ({
       collapsible
       defaultValue="item-0"
     >
-      {accordionData.map(
-        (
-          accordionItem: {
-            itemId: string;
-            title: string;
-            description: string;
-          },
-          index: number
-        ) => (
-          <AccordionItem key={accordionItem.title} value={accordionItem.itemId}>
-            <AccordionTrigger
-              className={
-                index === openedItem ? "text-main_color" : "text-custom_gray"
-              }
-              onClick={() => handleClick(index)}
-            >
-              {accordionItem.title}
-            </AccordionTrigger>
-            <AccordionContent>{accordionItem.description}</AccordionContent>
-          </AccordionItem>
-        )
-      )}
+      {accordionData.map((accordionItem: AccordionItem, index: number) => (
+        <AccordionItem key={accordionItem.title} value={accordionItem.itemId}>
+          <AccordionTrigger
+            className={
+              index === openedItem ? "text-main_color" : "text-custom_gray"
+            }
+            onClick={() => handleClick(index)}
+          >
+            {accordionItem.title}
+          </AccordionTrigger>
+          <AccordionContent>{accordionItem.description}</AccordionContent>
+        </AccordionItem>
+      ))}
     </Accordion>
   );
 };

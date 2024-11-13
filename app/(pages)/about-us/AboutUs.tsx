@@ -1,31 +1,10 @@
 "use client";
 
-import { FC, useState } from "react";
-import Image from "next/image";
+import { useState } from "react";
 
-import AccordionData from "@/app/components/AboutUs/AccordionData";
 import SectionTitle from "@/app/components/SectionTitle";
-// import OurHistory from "../../assets/images/our-history.png";
-import OurHistory1 from "../../assets/images/our-history-0.avif";
-import OurTechnology from "../../assets/images/our-technology.png";
-import OurProcess from "../../assets/images/our-process.png";
-import OurSkills from "../../assets/images/our-skills.png";
-
-type AboutUsImageProps = {
-  openedItem: number;
-};
-
-const AboutUsImage: FC<AboutUsImageProps> = ({ openedItem }) => {
-  const imageArr = [OurHistory1, OurTechnology, OurProcess, OurSkills];
-
-  return (
-    <Image
-      className="w-full md:w-2/3 h-80 md:h-auto rounded-2xl"
-      src={imageArr[openedItem]}
-      alt="image"
-    />
-  );
-};
+import AccordionData from "@/app/components/AboutUs/AccordionData";
+import AboutUsImage from "@/app/components/AboutUs/AboutUsImage";
 
 const AboutUs = () => {
   const [openedItem, setOpenedItem] = useState<number>(0);

@@ -15,7 +15,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={cn(
-      "bg-card_background rounded-2xl h-full hover:bg-card_background_hover",
+      "bg-card_background rounded-2xl h-full hover:bg-card_background_hover hover:cursor-pointer",
       className
     )}
     {...props}
@@ -27,7 +27,7 @@ const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="w-full flex px-8 py-0.5 md:py-2 text-xl md:text-2xl font-[family-name:var(--font-manrope)]">
+  <AccordionPrimitive.Header className="w-full flex px-4 md:px-8 py-0.5 md:py-2 text-xl lg:text-2xl font-[family-name:var(--font-manrope)]">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
@@ -49,7 +49,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="h-full overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down px-8 py-0.5 md:py-2 text-white text-base md:text-lg font-[family-name:var(--font-manrope)]"
+    className="h-full overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down px-4 md:px-8 py-0.5 md:py-2 text-white text-base md:text-lg font-[family-name:var(--font-manrope)]"
     {...props}
   >
     <div className={cn("pb-4 pt-0", className)}>{children}</div>
