@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "../Button";
 import Container from "../Container";
@@ -12,7 +13,9 @@ const Navbar = () => {
       <div className="w-full h-[100px] flex items-center justify-between gap-4 sm:gap-10 lg:gap-2">
         <Logo />
         <SectionsLinks navbar />
-        <Button label="START PROJECT" outlined />
+        <Link href={"/contact"}>
+          <Button label="START PROJECT" outlined />
+        </Link>
         <Image className="lg:hidden" src={Hamburger} alt="Hamburger icon" />
       </div>
     </Container>

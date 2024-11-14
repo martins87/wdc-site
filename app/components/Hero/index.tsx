@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Button from "../Button";
 
 const Hero = () => {
@@ -11,7 +13,9 @@ const Hero = () => {
           Your <span className="font-semibold">One-Stop Solution</span> For
           Digital Success
         </span>
-        <Button label="START PROJECT" size="big" />
+        <Link href={"/contact"}>
+          <Button label="START PROJECT" size="big" />
+        </Link>
       </div>
     </div>
   );
