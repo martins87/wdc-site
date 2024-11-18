@@ -52,7 +52,7 @@ const AccordionData: FC<AccordionDataProps> = ({
 
   return (
     <Accordion
-      className="w-full md:w-1/3 flex flex-col gap-y-2"
+      className="w-full lg:w-2/5 flex flex-col gap-y-2"
       type="single"
       collapsible
       defaultValue="item-0"

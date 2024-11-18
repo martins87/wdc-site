@@ -16,7 +16,7 @@ const AboutUsImage: FC<AboutUsImageProps> = ({ openedItem }) => {
 
   return (
     <Image
-      className="w-full md:w-2/3 h-80 md:h-auto rounded-2xl"
+      className="w-full lg:w-3/5 h-[40vh] md:h-[45vh] lg:h-[60vh] rounded-2xl"
       src={imageArr[openedItem]}
       alt="image"
     />

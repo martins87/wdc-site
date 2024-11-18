@@ -16,7 +16,7 @@ const AboutUs = () => {
         inRed="Us"
         description="A team of experts dedicated to delivering innovative web design and development solutions that elevate your brand."
       />
-      <div className="w-full max-h-[72vh] flex flex-col md:flex-row gap-2 object-cover object-center">
+      <div className="w-full flex flex-col lg:flex-row gap-2 object-cover object-center">
         <AboutUsImage openedItem={openedItem} />
         <AccordionData openedItem={openedItem} setOpenedItem={setOpenedItem} />
       </div>
