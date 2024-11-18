@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Button from "../Button";
 
 const CTA = () => {
@@ -22,14 +24,18 @@ const CTA = () => {
         </div>
         <div className="w-[234px] sm:w-[317px] rounded-tl-[32px] bg-background" />
         <div className="hidden sm:flex absolute bottom-0 right-0 w-full sm:w-[306px] h-[59px] sm:h-[86px]">
-          <Button className="w-full" label="START PROJECT" size="big" />
+          <Link href={"/contact"}>
+            <Button className="w-full" label="START PROJECT" size="big" />
+          </Link>
         </div>
       </div>
-      <Button
-        className="sm:hidden w-full rounded-2xl"
-        label="START PROJECT"
-        size="big"
-      />
+      <Link href={"/contact"}>
+        <Button
+          className="sm:hidden w-full rounded-2xl"
+          label="START PROJECT"
+          size="big"
+        />
+      </Link>
     </div>
   );
 };
