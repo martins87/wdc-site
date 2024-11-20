@@ -18,6 +18,10 @@ const geistMono = localFont({
 const montserrat = localFont({
   src: [
     {
+      path: "./assets/fonts/Montserrat-Bold.ttf",
+      weight: "700",
+    },
+    {
       path: "./assets/fonts/Montserrat-ExtraBold.ttf",
       weight: "800",
     },
