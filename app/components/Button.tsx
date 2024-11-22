@@ -6,6 +6,7 @@ type ButtonProps = {
   outlined?: boolean;
   size?: "normal" | "big";
   className?: string;
+  onClick?: () => void;
 };
 
 const Button: FC<ButtonProps> = ({
@@ -13,6 +14,7 @@ const Button: FC<ButtonProps> = ({
   outlined,
   size = "normal",
   className,
+  onClick,
 }) => {
   return (
     <div
@@ -26,6 +28,7 @@ const Button: FC<ButtonProps> = ({
           : "w-[137px] sm:w-[200px] h-[36px] sm:h-[51px] rounded-[10px] sm:rounded-2xl text-[14px] sm:text-[18px]",
         className
       )}
+      onClick={onClick}
     >
       {label}
     </div>
