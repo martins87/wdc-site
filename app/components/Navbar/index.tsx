@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       <Container>
-        <div className="w-full h-[100px] flex items-center justify-between sticky top-0 left-0 gap-x-10 sm:gap-10 lg:gap-10 z-10">
+        <div className="w-full h-[100px] flex items-center justify-between sticky top-0 left-0 gap-x-6 sm:gap-8 lg:gap-10 z-10">
           <Logo />
           <SectionsLinks navbar />
           <Link href={"/contact"} onClick={closeMobileMenu}>
