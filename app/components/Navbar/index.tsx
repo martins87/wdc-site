@@ -10,6 +10,7 @@ import Logo from "./Logo";
 import SectionsLinks from "../SectionsLinks";
 import MobileMenu from "./MobileMenu";
 import Hamburger from "../../assets/icons/Hamburger.svg";
+import Close from "../../assets/icons/Close.svg";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -21,10 +22,10 @@ const Navbar = () => {
   return (
     <>
       <Container>
-        <div className="w-full h-[100px] flex items-center justify-between sticky top-0 left-0 gap-4 sm:gap-10 lg:gap-2">
+        <div className="w-full h-[100px] flex items-center justify-between sticky top-0 left-0 gap-x-10 sm:gap-10 lg:gap-10 z-10">
           <Logo />
           <SectionsLinks navbar />
-          <Link href={"/contact"}>
+          <Link href={"/contact"} onClick={closeMobileMenu}>
             <Button label="START PROJECT" outlined />
           </Link>
           {!isMobileMenuOpen && (
@@ -35,14 +36,14 @@ const Navbar = () => {
               onClick={openMobileMenu}
             />
           )}
-          {/* {isMobileMenuOpen && (
+          {isMobileMenuOpen && (
             <Image
               className="lg:hidden hover:cursor-pointer z-10"
               src={Close}
               alt="Close icon"
               onClick={closeMobileMenu}
             />
-          )} */}
+          )}
         </div>
       </Container>
       <MobileMenu open={isMobileMenuOpen} onClick={closeMobileMenu} />
