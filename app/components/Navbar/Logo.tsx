@@ -1,11 +1,19 @@
+import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import NobleCraftLogo from "../../assets/icons/Logo.png";
 
-const Logo = () => {
+type LogoProps = {
+  onClick: () => void;
+};
+
+const Logo: FC<LogoProps> = ({ onClick }) => {
   return (
-    <div className="flex flex-1 text-white font-[family-name:var(--font-manrope)]">
+    <div
+      className="flex flex-1 text-white font-[family-name:var(--font-manrope)]"
+      onClick={onClick}
+    >
       <Link className="flex flex-col items-center" href="/">
         <Image
           className="w-10 sm:w-14 tablet:w-12"

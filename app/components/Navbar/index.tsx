@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       <Container>
         <div className="w-full h-[100px] flex items-center justify-between sticky top-0 left-0 gap-x-5 sm:gap-8 lg:gap-10 z-20">
-          <Logo />
+          <Logo onClick={closeMobileMenu} />
           <SectionsLinks navbar />
           <Link href={"/contact"} onClick={closeMobileMenu}>
             <Button label="START PROJECT" outlined />
