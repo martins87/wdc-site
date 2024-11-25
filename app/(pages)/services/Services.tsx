@@ -8,7 +8,7 @@ const Services = () => {
   const [openedItem, setOpenedItem] = useState<number>(0);
 
   return (
-    <div className="w-full my-20">
+    <div className="w-full">
       <SectionTitle
         inWhite="Our"
         inRed="Services"

@@ -5,7 +5,7 @@ import LibertyPay from "../../assets/icons/LibertyPay.png";
 
 const Clients = () => {
   return (
-    <div className="w-full h-[60vh] sm:h-[40vh] flex flex-col items-center justify-center sm:justify-start gap-y-6 text-custom_gray">
+    <div className="w-full flex flex-col items-center justify-center gap-y-6 text-custom_gray -mt-32 md:-mt-20 pb-10 md:pb-20">
       <span className="w-4/5 sm:w-full font-[family-name:var(--font-manrope)] text-base text-center">
         Creating impactful experiences for amazing companies like yours:
       </span>

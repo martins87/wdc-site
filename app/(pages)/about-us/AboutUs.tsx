@@ -10,7 +10,7 @@ const AboutUs = () => {
   const [openedItem, setOpenedItem] = useState<number>(0);
 
   return (
-    <div className="my-20">
+    <div>
       <SectionTitle
         inWhite="About"
         inRed="Us"

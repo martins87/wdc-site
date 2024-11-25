@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <Container>
+    <Container className="gap-y-40">
       <Hero />
       <Clients />
       <AboutUs />
