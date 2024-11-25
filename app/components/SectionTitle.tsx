@@ -16,7 +16,7 @@ const SectionTitle: FC<SectionTitleProps> = ({
   return (
     <div className="w-full flex flex-col gap-y-4 md:flex-row items-start md:items-center justify-between mb-10 font-[family-name:var(--font-manrope)] text-white">
       <div className="md:w-2/5 flex items-start mobile:items-center gap-x-12">
-        <div className="min-w-fit flex gap-3 text-4xl tablet:text-4xl font-extrabold">
+        <div className="min-w-fit flex gap-2 text-2xl tablet:text-4xl font-extrabold">
           <span className="min-w-fit">{inWhite}</span>
           <span className="min-w-fit text-main_color">{inRed}</span>
         </div>

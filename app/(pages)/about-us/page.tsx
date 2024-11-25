@@ -3,7 +3,7 @@ import Container from "@/app/components/Container";
 
 const page = () => {
   return (
-    <Container>
+    <Container className="mt-10">
       <AboutUs />
     </Container>
   );

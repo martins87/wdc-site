@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Container className="my-20">
+      <Container className="mt-10">
         <SectionTitle
           inWhite="Get In"
           inRed="Touch"
