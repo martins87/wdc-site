@@ -11,9 +11,15 @@ const config: Config = {
   	extend: {
   		colors: {
   			// background: "hsl(var(--background))",
-  			background: "#101010",
-  			main_color: "#FF2E2E",
+  			// background: "#101010", // old dark theme
+  			background: "#FFFFFF",
+				background_gray: "#EDEDED",
+				primary_text: "#282A46", // new light theme
+  			// main_color: "#FF2E2E",
+  			main_color: "#4241C2", // new light theme
   			custom_gray: "#A8A9AB",
+  			custom_gray_2: "#2E3E5C",
+				custom_gray_3: "#EAEEF3",
   			card_background: "#2E2E2E",
   			card_background_hover: "#424242",
 				message_background: "#D37F7F",

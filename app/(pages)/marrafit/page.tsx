@@ -3,6 +3,7 @@ import Image from "next/image";
 import Container from "@/app/components/Container";
 import Design from "../../assets/images/Marrafit/Design.png";
 import Logo from "../../assets/images/Marrafit/Logo-Colorido.svg";
+import MarrafitLogo from "../../assets/icons/MarraFit-new.svg";
 import Gym from "../../assets/images/Marrafit/Gym.png";
 import Pages from "../../assets/images/Marrafit/Pages.png";
 import ArrowRight from "../../assets/icons/ArrowRight.svg";
@@ -10,7 +11,7 @@ import ArrowRight from "../../assets/icons/ArrowRight.svg";
 const page = () => {
   return (
     <Container>
-      <div className="w-full flex flex-col gap-y-10 font-[family-name:var(--font-manrope)] text-white">
+      <div className="w-full flex flex-col gap-y-10 font-[family-name:var(--font-manrope)] text-primary_text">
         <span className="flex gap-1 tablet:gap-2 text-xl tablet:text-2xl font-bold my-10">
           <span>Our</span>
           <span className="text-main_color">Projects</span>
@@ -19,7 +20,7 @@ const page = () => {
           <div className="flex gap-x-10">
             <Image
               className="w-24 mobile:w-32 tablet:w-48"
-              src={Logo}
+              src={MarrafitLogo}
               alt="Cinesercla logo in gray"
             />
             <div className="hidden w-0.5 tablet:w-[3px] h-auto sm:flex bg-main_color rounded-lg" />

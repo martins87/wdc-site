@@ -4,51 +4,36 @@ import Link from "next/link";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { twMerge } from "tailwind-merge";
 
-import ArrowUp from "../../assets/icons/ArrowUp.svg";
-
 type ProjectCardProps = {
+  service: string;
   title: string;
-  description: string;
   image: string | StaticImport;
   src: string;
-  orientation: "left" | "right";
 };
 
-const ProjectCard: FC<ProjectCardProps> = ({
-  title,
-  description,
-  image,
-  src,
-  orientation,
-}) => {
+const ProjectCard: FC<ProjectCardProps> = ({ title, service, image, src }) => {
   return (
     <Link
-      className="w-full h-[402px] flex flex-col tablet:flex-row rounded-3xl bg-card_background overflow-hidden hover:cursor-pointer hover:bg-card_background_hover"
+      className="w-full flex flex-col gap-y-4 overflow-hidden hover:cursor-pointer"
       href={src}
     >
       <div
         className={twMerge(
-          "w-full tablet:w-1/2 h-1/2 tablet:h-full flex items-center justify-center overflow-hidden",
-          orientation === "left"
-            ? "order-first"
-            : "order-first tablet:order-last"
+          "w-full flex items-center justify-center overflow-hidden rounded-3xl"
         )}
       >
         <Image
-          className="min-w-full min-h-full object-cover"
+          className="sm:h-[440px] md:h-[512px] tablet:h-[400px]"
           src={image}
-          alt="cinesercla project"
+          alt="project"
         />
       </div>
-      <div className="relative w-full tablet:w-1/2 h-1/2 tablet:h-full flex flex-col items-start justify-center gap-2 p-10 font-[family-name:var(--font-manrope)] text-white">
-        <div className="absolute top-8 tablet:top-10 right-8 tablet:right-10 w-4 sm:w-6 tablet:w-8">
-          <Image src={ArrowUp} alt="Arrow up" />
-        </div>
-        <span className="text-2xl sm:text-3xl tablet:text-4xl font-extrabold">
-          {title}
+      <div className="relative w-full flex flex-col items-start justify-center gap-2 font-[family-name:var(--font-poppins)] ">
+        <span className="font-normal text-sm sm:text-base text-custom_gray_2/80">
+          {service}
         </span>
-        <span className="text-sm sm:text-base tablet:text-xl">
-          {description}
+        <span className="font-bold text-xl sm:text-2xl text-primary_text">
+          {title}
         </span>
       </div>
     </Link>

@@ -15,7 +15,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClick }) => {
   return (
     <div
       className={twMerge(
-        "md:hidden fixed w-full h-[calc(100%+32px)] flex flex-col gap-y-0 -mt-[100px] origin-top duration-500 transform bg-background z-10",
+        "lg:hidden fixed w-full h-[calc(100%+32px)] flex flex-col gap-y-0 -mt-[100px] origin-top duration-500 transform bg-background z-10",
         open ? "translate-y-0" : "-translate-y-full"
       )}
     >
@@ -24,7 +24,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClick }) => {
           {links.map((link: PageLink, index: number) => (
             <Link
               key={index}
-              className="flex items-center justify-start gap-x-1 font-[family-name:var(--font-montserrat)] text-white font-bold"
+              className="flex items-center justify-start gap-x-1 font-[family-name:var(--font-montserrat)] text-primary_text font-bold"
               href={link.src}
               onClick={onClick}
             >

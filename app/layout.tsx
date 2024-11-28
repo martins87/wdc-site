@@ -5,38 +5,55 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const geistSans = localFont({
-  src: "./assets/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const poppins = localFont({
+  src: [
+    {
+      path: "./assets/fonts/Poppins-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "./assets/fonts/Poppins-Medium.ttf",
+      weight: "500",
+    },
+    {
+      path: "./assets/fonts/Poppins-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "./assets/fonts/Poppins-Semibold.ttf",
+      weight: "600",
+    },
+    {
+      path: "./assets/fonts/Poppins-Bold.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-poppins",
 });
-const geistMono = localFont({
-  src: "./assets/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 const montserrat = localFont({
   src: [
     {
-      path: "./assets/fonts/Montserrat-Bold.ttf",
-      weight: "700",
+      path: "./assets/fonts/Montserrat-Regular.ttf",
+      weight: "400",
     },
     {
       path: "./assets/fonts/Montserrat-ExtraBold.ttf",
       weight: "800",
     },
+    {
+      path: "./assets/fonts/Montserrat-Black.ttf",
+      weight: "900",
+    },
   ],
   variable: "--font-montserrat",
 });
+
 const manrope = localFont({
   src: [
     {
       path: "./assets/fonts/Manrope-Regular.ttf",
       weight: "400",
-    },
-    {
-      path: "./assets/fonts/Manrope-Medium.ttf",
-      weight: "500",
     },
     {
       path: "./assets/fonts/Manrope-SemiBold.ttf",
@@ -63,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${manrope.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
+        className={`${poppins.variable} ${montserrat.variable} ${manrope.variable} antialiased bg-background`}
       >
         <Navbar />
         {children}

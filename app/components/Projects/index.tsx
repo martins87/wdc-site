@@ -1,7 +1,7 @@
 import SectionTitle from "../SectionTitle";
 import ProjectCard from "./ProjectCard";
-import CineserclaProject from "../../assets/images/Cinesercla/Cinesercla-Project.png";
-import MarrafitProject from "../../assets/images/Marrafit/Marrafit-Project.png";
+import CineserclaProject from "../../assets/images/Projects-Cinesercla.png";
+import MarrafitProject from "../../assets/images/Projects-Marrafit.png";
 
 const Projects = () => {
   return (
@@ -9,22 +9,22 @@ const Projects = () => {
       <SectionTitle
         inWhite="Our"
         inRed="Projects"
-        description="We create impactful digital experiences by aligning user goals with cutting-edge design and development solutions."
+        description="We focus on user goals to craft meaningful digital solutions for every need."
       />
-      <ProjectCard
-        title="Cinesercla"
-        description="By revamping the cinema website, we streamlined navigation and added intuitive features that addressed both user and business needs, boosting engagement."
-        image={CineserclaProject}
-        src="/cinesercla"
-        orientation="left"
-      />
-      <ProjectCard
-        title="Marra Fit"
-        description="The redesign of the gym website brought a fresh look and optimized features, making it simple for members to explore schedules and manage their workouts."
-        image={MarrafitProject}
-        src="/marrafit"
-        orientation="right"
-      />
+      <div className="flex flex-col tablet:flex-row tablet:gap-x-4 xl:gap-x-10 gap-y-24">
+        <ProjectCard
+          service="Website Redesign"
+          title="Transforming cinema websites for optimal engagement"
+          image={CineserclaProject}
+          src="/cinesercla"
+        />
+        <ProjectCard
+          service="Website Redesign"
+          title="Enhanced landing page for gym website"
+          image={MarrafitProject}
+          src="/marrafit"
+        />
+      </div>
     </div>
   );
 };

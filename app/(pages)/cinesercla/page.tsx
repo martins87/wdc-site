@@ -10,7 +10,7 @@ import ArrowRight from "../../assets/icons/ArrowRight.svg";
 const page = () => {
   return (
     <Container>
-      <div className="w-full flex flex-col gap-y-10 font-[family-name:var(--font-manrope)] text-white">
+      <div className="w-full flex flex-col gap-y-10 font-[family-name:var(--font-manrope)] text-primary_text">
         <span className="flex gap-1 tablet:gap-2 text-xl tablet:text-2xl font-bold my-10">
           <span>Our</span>
           <span className="text-main_color">Projects</span>
@@ -48,18 +48,18 @@ const page = () => {
         <div className="w-full flex flex-col sm:flex-row gap-8 text-xl">
           <div className="w-full sm:w-1/2 flex flex-col gap-8 sm:flex-row">
             <div className="w-full sm:w-1/2 flex flex-col">
-              <span className="text-custom_gray">Client</span>
+              <span className="text-primary_text font-bold">Client</span>
               <span className="text-sm sm:text-base">Cinesercla</span>
             </div>
             <div className="w-full sm:w-1/2 flex flex-col">
-              <span className="text-custom_gray">Services</span>
+              <span className="text-primary_text font-bold">Services</span>
               <span className="text-sm sm:text-base">
                 Website Design & Development
               </span>
             </div>
           </div>
           <div className="w-full sm:w-1/2 flex flex-col">
-            <span className="text-custom_gray">Project Info</span>
+            <span className="text-primary_text font-bold">Project Info</span>
             <span className="text-sm sm:text-base">
               Cinesercla, established in 1980, is one of Brazil&apos;s top
               cinema groups, with nearly 80 theaters across 7 states. Since
