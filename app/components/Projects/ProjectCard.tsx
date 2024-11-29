@@ -26,6 +26,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, service, image, src }) => {
       <Typography
         className="relative w-full flex flex-col items-start justify-center gap-2"
         font="poppins"
+        weight="normal"
       >
         <span className="font-normal text-sm sm:text-base text-custom_gray_2/80">
           {service}
