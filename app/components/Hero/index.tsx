@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import Button from "../Button";
 import HeroImg from "../../assets/images/HeroImg-2.png";
-import Seo from "../../assets/images/seo.png";
-import Vscode from "../../assets/images/vscode.png";
-import Figma from "../../assets/images/figma.png";
+// import Seo from "../../assets/images/seo.png";
+// import Vscode from "../../assets/images/vscode.png";
+// import Figma from "../../assets/images/figma.png";
 
 const Hero = () => {
   return (
