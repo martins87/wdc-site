@@ -6,15 +6,13 @@ import Logo from "../../assets/images/Cinesercla/Logo-Bordeaux.svg";
 import Cinema from "../../assets/images/Cinesercla/Cinema.png";
 import Pages from "../../assets/images/Cinesercla/Pages.png";
 import ArrowRight from "../../assets/icons/ArrowRight.svg";
+import SectionTitle from "@/app/components/SectionTitle";
 
 const page = () => {
   return (
-    <Container>
+    <Container className="mt-16">
       <div className="w-full flex flex-col gap-y-10 font-[family-name:var(--font-manrope)] text-primary_text">
-        <span className="flex gap-1 tablet:gap-2 text-xl tablet:text-2xl font-bold my-10">
-          <span>Our</span>
-          <span className="text-main_color">Projects</span>
-        </span>
+        <SectionTitle inWhite="Our" inRed="Projects" />
         <div className="w-full flex justify-between gap-8">
           <div className="flex gap-x-10">
             <Image
@@ -72,7 +70,7 @@ const page = () => {
         </div>
         <div className="w-full flex flex-col gap-2">
           <div className="w-full flex gap-2">
-            <div className="w-1/2 h-auto flex items-center justify-center border border-card_background rounded-lg sm:rounded-2xl bg-card_background">
+            <div className="w-1/2 h-auto flex items-center justify-center border border-card_background rounded-lg sm:rounded-3xl bg-card_background">
               <Image
                 className="w-24 mobile:w-32 sm:w-44 md:w-52"
                 src={Logo}

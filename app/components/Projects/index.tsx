@@ -11,7 +11,7 @@ const Projects = () => {
         inRed="Projects"
         description="We focus on user goals to craft meaningful digital solutions for every need."
       />
-      <div className="flex flex-col tablet:flex-row tablet:gap-x-4 xl:gap-x-10 gap-y-24">
+      <div className="flex flex-col tablet:flex-row tablet:gap-x-4 xl:gap-x-10 gap-y-14">
         <ProjectCard
           service="Website Redesign"
           title="Transforming cinema websites for optimal engagement"

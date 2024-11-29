@@ -3,7 +3,7 @@ import { FC } from "react";
 type SectionTitleProps = {
   inWhite: string;
   inRed: string;
-  description: string;
+  description?: string;
 };
 
 const SectionTitle: FC<SectionTitleProps> = ({

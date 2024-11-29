@@ -3,7 +3,7 @@ import Projects from "@/app/components/Projects";
 
 const page = () => {
   return (
-    <Container className="mt-10">
+    <Container className="mt-16">
       <Projects />
     </Container>
   );

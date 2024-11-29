@@ -19,9 +19,9 @@ const Button: FC<ButtonProps> = ({
   return (
     <div
       className={twMerge(
-        "flex items-center justify-center text-primary_text font-[family-name:var(--font-montserrat)] font-extrabold hover:cursor-pointer",
+        "flex items-center justify-center font-[family-name:var(--font-montserrat)] font-extrabold hover:cursor-pointer",
         outlined
-          ? "border-2 border-main_color bg-inherit hover:bg-main_color hover:text-white transition-all duration-300"
+          ? "tablet:border-2 tablet:border-main_color bg-main_color tablet:bg-inherit tablet:hover:bg-main_color text-white tablet:text-primary_text tablet:hover:text-white transition-all duration-300"
           : "bg-main_color text-white",
         size === "big"
           ? "w-[232px] sm:w-[306px] h-[59px] sm:h-[86px] rounded-[10px] sm:rounded-[25px] text-[22px] sm:text-[28px]"
