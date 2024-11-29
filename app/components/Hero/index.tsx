@@ -2,10 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Button from "../Button";
-import HeroImg from "../../assets/images/HeroImg-2.png";
-// import Seo from "../../assets/images/seo.png";
-// import Vscode from "../../assets/images/vscode.png";
-// import Figma from "../../assets/images/figma.png";
+import HeroImg from "../../assets/images/HeroImg.png";
 
 const Hero = () => {
   return (
@@ -22,23 +19,8 @@ const Hero = () => {
           <Button label="START PROJECT" size="big" />
         </Link>
       </div>
-      <div className="relative w-[90%] tablet:w-[40%] flex items-center justify-center">
-        <div className="relative">
-          <Image
-            className="object-contain w-auto h-auto"
-            src={HeroImg}
-            alt="hero image"
-          />
-        </div>
-        {/* <div className="absolute  top-[0%] left-[0%] w-auto h-auto">
-          <Image className="object-contain" src={Seo} alt="seo" />
-        </div>
-        <div className="absolute top-[10%] left-[12%] w-auto h-auto">
-          <Image className="object-contain" src={Vscode} alt="vscode" />
-        </div>
-        <div className="absolute top-[10%] right-[0%] w-auto h-auto">
-          <Image className="object-contain" src={Figma} alt="figma" />
-        </div> */}
+      <div className="relative w-full tablet:w-[40%] flex items-center justify-center">
+        <Image src={HeroImg} alt="hero image" />
       </div>
     </div>
   );

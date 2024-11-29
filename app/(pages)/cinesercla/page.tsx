@@ -72,7 +72,7 @@ const page = () => {
         </div>
         <div className="w-full flex flex-col gap-2">
           <div className="w-full flex gap-2">
-            <div className="w-1/2 h-auto flex items-center justify-center border border-card_background rounded-3xl bg-card_background">
+            <div className="w-1/2 h-auto flex items-center justify-center border border-card_background rounded-lg sm:rounded-2xl bg-card_background">
               <Image
                 className="w-24 mobile:w-32 sm:w-44 md:w-52"
                 src={Logo}
