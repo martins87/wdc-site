@@ -15,7 +15,7 @@ const Hero = () => {
           weight="black"
         >
           we craft elegant and functional{" "}
-          <span className="text-main_color">websites</span>
+          <span className="text-main_color capitalize">websites</span>
         </Typography>
         <Typography
           className="text-custom_gray_2 text-base sm:text-xl tablet:mb-4"

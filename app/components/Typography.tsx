@@ -5,7 +5,7 @@ import { TypographyProps } from "../types/Typography";
 
 const Typography: FC<TypographyProps> = ({
   font,
-  weight = "normal",
+  weight,
   children,
   className,
   onClick,
@@ -13,8 +13,9 @@ const Typography: FC<TypographyProps> = ({
   return (
     <span
       className={twMerge(
-        `font-[family-name:var(--font-${font})] font-${weight}`,
-        className
+        className,
+        font ? `font-[family-name:var(--font-${font})]` : "",
+        weight ? `font-${weight}` : ""
       )}
       onClick={onClick}
     >

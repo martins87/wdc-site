@@ -15,8 +15,10 @@ const SectionTitle: FC<SectionTitleProps> = ({
         font="montserrat"
         weight="extrabold"
       >
-        <span className="min-w-fit">{inWhite}</span>
-        <span className="min-w-fit text-main_color">{inRed}</span>
+        <Typography className="min-w-fit">{inWhite}</Typography>
+        <Typography className="min-w-fit text-main_color" font="montserrat">
+          {inRed}
+        </Typography>
       </Typography>
       <Typography
         className="w-full flex flex-1 text-base tablet:text-xl text-custom_gray_2/80"
