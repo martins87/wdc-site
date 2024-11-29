@@ -1,15 +1,10 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { twMerge } from "tailwind-merge";
 
-type ProjectCardProps = {
-  service: string;
-  title: string;
-  image: string | StaticImport;
-  src: string;
-};
+import Typography from "../Typography";
+import { ProjectCardProps } from "@/app/types/ProjectCard";
 
 const ProjectCard: FC<ProjectCardProps> = ({ title, service, image, src }) => {
   return (
@@ -28,14 +23,17 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, service, image, src }) => {
           alt="project"
         />
       </div>
-      <div className="relative w-full flex flex-col items-start justify-center gap-2 font-[family-name:var(--font-poppins)] ">
+      <Typography
+        className="relative w-full flex flex-col items-start justify-center gap-2"
+        font="poppins"
+      >
         <span className="font-normal text-sm sm:text-base text-custom_gray_2/80">
           {service}
         </span>
         <span className="font-bold text-xl sm:text-2xl text-primary_text">
           {title}
         </span>
-      </div>
+      </Typography>
     </Link>
   );
 };

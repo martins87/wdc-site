@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
 import Button from "../Button";
 import Container from "../Container";
@@ -11,7 +12,6 @@ import SectionsLinks from "../SectionsLinks";
 import MobileMenu from "./MobileMenu";
 import Hamburger from "../../assets/icons/Hamburger.svg";
 import Close from "../../assets/icons/Close.svg";
-import { twMerge } from "tailwind-merge";
 
 const Navbar = () => {
   const [isScrolling, setIsScrolling] = useState<boolean>(false);

@@ -1,13 +1,8 @@
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 
-type ButtonProps = {
-  label: string;
-  outlined?: boolean;
-  size?: "normal" | "big";
-  className?: string;
-  onClick?: () => void;
-};
+import Typography from "./Typography";
+import { ButtonProps } from "../types/Button";
 
 const Button: FC<ButtonProps> = ({
   label,
@@ -19,7 +14,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <div
       className={twMerge(
-        "flex items-center justify-center font-[family-name:var(--font-montserrat)] font-extrabold hover:cursor-pointer",
+        "flex items-center justify-center hover:cursor-pointer",
         outlined
           ? "tablet:border-2 tablet:border-main_color bg-main_color tablet:bg-inherit tablet:hover:bg-main_color text-white tablet:text-primary_text tablet:hover:text-white transition-all duration-300"
           : "bg-main_color text-white",
@@ -30,7 +25,9 @@ const Button: FC<ButtonProps> = ({
       )}
       onClick={onClick}
     >
-      {label}
+      <Typography font="montserrat" weight="extrabold">
+        {label}
+      </Typography>
     </div>
   );
 };

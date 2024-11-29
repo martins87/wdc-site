@@ -2,11 +2,12 @@ import Image from "next/image";
 
 import Container from "../Container";
 import Logo from "../Navbar/Logo";
+import SectionsLinks from "../SectionsLinks";
+import Typography from "../Typography";
 import X from "../../assets/icons/X.svg";
 import Facebook from "../../assets/icons/Facebook.svg";
 import Github from "../../assets/icons/Github.svg";
 import Instagram from "../../assets/icons/Instagram.svg";
-import SectionsLinks from "../SectionsLinks";
 
 const Footer = () => {
   return (
@@ -24,13 +25,13 @@ const Footer = () => {
         <div className="w-full h-[0.5px] bg-custom_gray_3/15" />
         <div className="w-full flex flex-col md:flex-row gap-y-8 items-center justify-between">
           <SectionsLinks footer />
-          <span className="font-[family-name:var(--font-poppins)] text-xl font-medium">
+          <Typography className="text-xl font-medium" font="poppins">
             contact@noblecraft.design
-          </span>
+          </Typography>
         </div>
-        <span className="font-[family-name:var(--font-manrope)] font-normal text-sm opacity-50">
+        <Typography className="text-sm opacity-50" font="manrope">
           All Rights Reserved. Noble Craft Web Design®
-        </span>
+        </Typography>
       </Container>
     </footer>
   );

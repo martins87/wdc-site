@@ -2,19 +2,13 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import Typography from "../Typography";
 import NobleCraftLogo from "../../assets/icons/Logo.png";
-
-type LogoProps = {
-  onClick?: () => void;
-  noText?: boolean;
-};
+import { LogoProps } from "@/app/types/Logo";
 
 const Logo: FC<LogoProps> = ({ onClick, noText }) => {
   return (
-    <div
-      className="flex  text-primary_text font-[family-name:var(--font-manrope)]"
-      onClick={onClick}
-    >
+    <Typography className="flex  text-primary_text " onClick={onClick}>
       <Link className="flex flex-col items-center" href="/">
         <Image
           className="w-10 sm:w-14 tablet:w-12"
@@ -22,13 +16,17 @@ const Logo: FC<LogoProps> = ({ onClick, noText }) => {
           alt="crown icon"
         />
         {!noText && (
-          <div className="hidden tablet:flex flex-col items-center justify-start mt-[0.5px] font-[family-name:var(--font-montserrat)] text-sm font-bold tracking-wider">
+          <Typography
+            className="hidden tablet:flex flex-col items-center justify-start mt-[0.5px] text-sm tracking-wider"
+            font="montserrat"
+            weight="bold"
+          >
             <span>NOBLE</span>
             <span className="-mt-[8px]">CRAFT</span>
-          </div>
+          </Typography>
         )}
       </Link>
-    </div>
+    </Typography>
   );
 };
 

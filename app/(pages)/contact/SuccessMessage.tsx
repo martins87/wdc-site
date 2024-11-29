@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Check from "../../assets/icons/Check.svg";
+import Typography from "@/app/components/Typography";
 
 const SuccessMessage = () => {
   return (
@@ -12,10 +13,14 @@ const SuccessMessage = () => {
           alt="check icon"
         />
       </div>
-      <span className="w-[85%] flex items-center text-sm md:text-base tablet:text-xl font-[family-name:var(--font-manrope)] text-primary_text font-bold">
+      <Typography
+        className="w-[85%] flex items-center text-sm md:text-base tablet:text-xl text-primary_text"
+        font="manrope"
+        weight="bold"
+      >
         Your request was sent successfully! We will be in touch shortly to
         discuss the next steps.
-      </span>
+      </Typography>
     </div>
   );
 };

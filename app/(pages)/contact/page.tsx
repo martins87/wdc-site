@@ -37,7 +37,7 @@ const Contact = () => {
         <SectionTitle
           inWhite="Get In"
           inRed="Touch"
-          description="Reach out with your project details, and we'll get back to you soon. Complete the form or email us at"
+          description="Reach out with your project details, and we'll get back to you soon. Complete the form or email us at contact@noblecraft.design"
         />
         {success && <SuccessMessage />}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2">

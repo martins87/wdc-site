@@ -1,10 +1,7 @@
 import { FC } from "react";
 
-type SectionTitleProps = {
-  inWhite: string;
-  inRed: string;
-  description?: string;
-};
+import Typography from "./Typography";
+import { SectionTitleProps } from "../types/SectionTitle";
 
 const SectionTitle: FC<SectionTitleProps> = ({
   inWhite,
@@ -12,17 +9,25 @@ const SectionTitle: FC<SectionTitleProps> = ({
   description,
 }) => {
   return (
-    <div className="w-full flex flex-col gap-y-4 items-start justify-start mb-10 font-[family-name:var(--font-montserrat)] text-primary_text">
-      <div className="flex items-start mobile:items-center gap-x-12">
-        <div className="min-w-fit flex gap-2 text-3xl tablet:text-4xl font-extrabold">
-          <span className="min-w-fit">{inWhite}</span>
-          <span className="min-w-fit text-main_color">{inRed}</span>
-        </div>
-      </div>
-      <span className="w-full flex flex-1 font-[family-name:var(--font-poppins)] text-base tablet:text-xl text-custom_gray_2/80">
+    <Typography
+      className="w-full flex flex-col gap-y-4 items-start justify-start mb-10 text-primary_text"
+      font="montserrat"
+      weight="normal"
+    >
+      <Typography
+        className="min-w-fit flex items-start mobile:items-center gap-2 text-3xl tablet:text-4xl "
+        weight="extrabold"
+      >
+        <span className="min-w-fit">{inWhite}</span>
+        <span className="min-w-fit text-main_color">{inRed}</span>
+      </Typography>
+      <Typography
+        className="w-full flex flex-1 text-base tablet:text-xl text-custom_gray_2/80"
+        font="poppins"
+      >
         {description}
-      </span>
-    </div>
+      </Typography>
+    </Typography>
   );
 };
 
