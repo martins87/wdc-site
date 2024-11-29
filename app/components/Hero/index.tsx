@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Button from "../Button";
-import HeroImg from "../../assets/images/HeroImg.png";
+import HeroImg from "../../assets/images/HeroImg-2.png";
 import Seo from "../../assets/images/seo.png";
 import Vscode from "../../assets/images/vscode.png";
 import Figma from "../../assets/images/figma.png";
@@ -30,7 +30,7 @@ const Hero = () => {
             alt="hero image"
           />
         </div>
-        <div className="absolute  top-[0%] left-[0%] w-auto h-auto">
+        {/* <div className="absolute  top-[0%] left-[0%] w-auto h-auto">
           <Image className="object-contain" src={Seo} alt="seo" />
         </div>
         <div className="absolute top-[10%] left-[12%] w-auto h-auto">
@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
         <div className="absolute top-[10%] right-[0%] w-auto h-auto">
           <Image className="object-contain" src={Figma} alt="figma" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
