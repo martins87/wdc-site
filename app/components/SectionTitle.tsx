@@ -9,13 +9,10 @@ const SectionTitle: FC<SectionTitleProps> = ({
   description,
 }) => {
   return (
-    <Typography
-      className="w-full flex flex-col gap-y-4 items-start justify-start mb-10 text-primary_text"
-      font="montserrat"
-      weight="normal"
-    >
+    <div className="w-full flex flex-col gap-y-4 items-start justify-start mb-10 text-primary_text">
       <Typography
-        className="min-w-fit flex items-start mobile:items-center gap-2 text-3xl tablet:text-4xl "
+        className="min-w-fit flex items-start mobile:items-center gap-2 text-3xl tablet:text-4xl"
+        font="montserrat"
         weight="extrabold"
       >
         <span className="min-w-fit">{inWhite}</span>
@@ -27,7 +24,7 @@ const SectionTitle: FC<SectionTitleProps> = ({
       >
         {description}
       </Typography>
-    </Typography>
+    </div>
   );
 };
 
