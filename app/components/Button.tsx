@@ -26,8 +26,10 @@ const Button: FC<ButtonProps> = ({
       onClick={onClick}
     >
       <Typography font="montserrat" weight="extrabold">
+        {/* <span className="font-[family-name:var(--font-montserrat)] font-extrabold"> */}
         {label}
       </Typography>
+      {/* </span> */}
     </div>
   );
 };

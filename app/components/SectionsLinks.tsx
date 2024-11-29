@@ -16,17 +16,18 @@ const SectionsLinks: FC<SectionsLinksProps> = ({ navbar, footer }) => {
     <div className={twMerge(navbar ? "hidden lg:flex" : "")}>
       <ul className={twMerge("flex items-center", navbar ? "gap-12" : "gap-6")}>
         {links.map((link: PageLink) => (
-          <Typography key={link.src} font="manrope">
-            <li
-              className={twMerge(
-                "text-primary_text hover:text-main_color hover:cursor-pointer text-base",
-                navbar ? "font-semibold" : "font-normal",
-                footer ? "text-white" : ""
-              )}
-            >
-              <Link href={link.src}>{link.label}</Link>
-            </li>
-          </Typography>
+          <li
+            key={link.src}
+            className={twMerge(
+              "text-primary_text hover:text-main_color hover:cursor-pointer text-base",
+              navbar ? "font-semibold" : "font-normal",
+              footer ? "text-white" : ""
+            )}
+          >
+            <Link href={link.src}>
+              <Typography font="manrope">{link.label}</Typography>
+            </Link>
+          </li>
         ))}
       </ul>
     </div>
