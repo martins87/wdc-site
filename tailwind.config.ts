@@ -15,6 +15,7 @@ const config: Config = {
   			background: "#FFFFFF",
 				background_gray: "#EDEDED",
 				primary_text: "#282A46", // new light theme
+				secondary_text: "#1E1F4B",
   			// main_color: "#FF2E2E",
   			main_color: "#4241C2", // new light theme
   			custom_gray: "#A8A9AB",

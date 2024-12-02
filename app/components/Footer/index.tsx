@@ -3,7 +3,6 @@ import Image from "next/image";
 import Container from "../Container";
 import Logo from "../Navbar/Logo";
 import SectionsLinks from "../SectionsLinks";
-import Typography from "../Typography";
 import X from "../../assets/icons/X.svg";
 import Facebook from "../../assets/icons/Facebook.svg";
 import Github from "../../assets/icons/Github.svg";
@@ -25,13 +24,13 @@ const Footer = () => {
         <div className="w-full h-[0.5px] bg-custom_gray_3/15" />
         <div className="w-full flex flex-col md:flex-row gap-y-8 items-center justify-between">
           <SectionsLinks footer />
-          <Typography className="text-xl font-medium" font="poppins">
+          <span className="text-xl font-[family-name:var(--font-poppins)] font-medium">
             contact@noblecraft.design
-          </Typography>
+          </span>
         </div>
-        <Typography className="text-sm opacity-50" font="manrope">
+        <span className="text-sm opacity-50 font-[family-name:var(--font-manrope)] font-normal">
           All Rights Reserved. Noble Craft Web Design®
-        </Typography>
+        </span>
       </Container>
     </footer>
   );
