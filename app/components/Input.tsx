@@ -16,7 +16,7 @@ const Input: FC<InputProps> = ({ placeholder }) => {
 
   return (
     <input
-      className="min-h-20 py-2 px-6 outline-none bg-card_background rounded-2xl text-white text-xl placeholder:text-custom_gray"
+      className="min-h-20 py-2 px-6 outline-none bg-card_background rounded-2xl text-white text-xl font-[family-name:var(--font-montserrat)] placeholder:text-custom_gray"
       type="text"
       value={value}
       onChange={onInput}
