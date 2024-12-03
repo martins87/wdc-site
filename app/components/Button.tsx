@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 
-import Typography from "./Typography";
 import { ButtonProps } from "../types/Button";
 
 const Button: FC<ButtonProps> = ({
@@ -25,9 +24,9 @@ const Button: FC<ButtonProps> = ({
       )}
       onClick={onClick}
     >
-      <Typography font="montserrat" weight="extrabold">
+      <span className="font-[family-name:var(--font-montserrat)] font-semibold">
         {label}
-      </Typography>
+      </span>
     </div>
   );
 };
