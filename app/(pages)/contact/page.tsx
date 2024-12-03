@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
         <Textarea placeholder="Describe your project goals" />
         <Button
-          className="mt-2 ml-auto"
+          className="mt-2 mr-auto w-1/2 sm:w-[152px] sm:h-[51px] sm:text-[18px]"
           label="SEND"
           size="big"
           onClick={handleClick}
