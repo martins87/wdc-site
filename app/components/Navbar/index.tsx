@@ -69,7 +69,7 @@ const Navbar = () => {
             </Link>
             {!isMobileMenuOpen && (
               <Image
-                className="lg:hidden hover:cursor-pointer"
+                className="tablet:hidden hover:cursor-pointer"
                 src={Hamburger}
                 alt="Hamburger icon"
                 onClick={openMobileMenu}
@@ -77,7 +77,7 @@ const Navbar = () => {
             )}
             {isMobileMenuOpen && (
               <Image
-                className="lg:hidden hover:cursor-pointer z-10"
+                className="tablet:hidden hover:cursor-pointer z-10"
                 src={Close}
                 alt="Close icon"
                 onClick={closeMobileMenu}

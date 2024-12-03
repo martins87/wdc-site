@@ -13,7 +13,7 @@ type SectionsLinksProps = {
 
 const SectionsLinks: FC<SectionsLinksProps> = ({ navbar, footer }) => {
   return (
-    <div className={twMerge(navbar ? "hidden lg:flex" : "")}>
+    <div className={twMerge(navbar ? "hidden tablet:flex" : "")}>
       <ul className={twMerge("flex items-center", navbar ? "gap-12" : "gap-6")}>
         {links.map((link: PageLink) => (
           <li
