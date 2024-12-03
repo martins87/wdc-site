@@ -50,7 +50,7 @@ const Navbar = () => {
       <Container
         className={twMerge(
           "w-full tablet:sticky top-0 left-0 z-20",
-          isScrolling ? "sticky" : ""
+          isMobileMenuOpen && isScrolling ? "sticky" : ""
         )}
       >
         <div className="w-full h-[80px] sm:h-[100px] flex items-end gap-x-5 sm:gap-8 lg:gap-10">
